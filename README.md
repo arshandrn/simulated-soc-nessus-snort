@@ -38,3 +38,15 @@ hydra, nmap, XAMPP, Ubuntu, Windows 10, VirtualBox
 ## Files in This Repo
 - [Project Report](IDS.pdf)
 - [Screenshots](screenshots.pdf)
+
+## Screenshots
+- Nessus Overview
+![Nessus Overview](screenshots/fig1-nessus-overview.png)
+- Apache CVEs
+![Apache CVEs](screenshots/fig2-apache-cves.png)
+- Snort Rules
+![Snort Rules](screenshots/fig5-snort-rules.png)
+- PHP Alert
+![PHP Alert](screenshots/fig7-php-alert.png)
+- MySQL Alert
+![MySQL Alert](screenshots/fig10-mysql-alert.png)
