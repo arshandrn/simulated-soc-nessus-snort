@@ -34,3 +34,7 @@ Full rules: [snort-rules/local.rules](snort-rules/local.rules)
 ## Tools Used
 Nessus Essentials, Snort IDS, Kali Linux, curl, mysql client,
 hydra, nmap, XAMPP, Ubuntu, Windows 10, VirtualBox
+
+## Files in This Repo
+- [Project Report](IDS.pdf)
+- [Screenshots](screenshots.pdf)
