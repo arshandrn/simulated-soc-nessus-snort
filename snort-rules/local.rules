@@ -1,0 +1,17 @@
+#Apache
+alert tcp any any -> 10.97.207.181 80 (msg:"Apache 2.4.x detected"; content:"Apache/2.4."; nocase; sid:200001; rev:1;)
+
+#PHP
+alert tcp any any -> 10.97.207.181 80 (msg:"PHP 7.2.0 vulnerable version detected"; flow:to_server,established; content:"X-Powered-By: PHP/7.2.0"; http_header; sid:200002; rev:1;)
+
+#MySQL Weak Credentials
+alert tcp any any -> 10.97.207.181 3306 (msg:"MySQL weak credential attempt"; flow:to_server,established; sid:200003; rev:1;)
+
+#SSL Traffic
+alert tcp any any -> 10.97.207.181 443 (msg:"SSL traffic detected - check for weak certs"; sid:200004; rev:1;)
+
+#OpenSSL Issues
+alert tcp any any -> 10.97.207.181 443 (msg:"OpenSSL multiple vulnerabilities possible"; sid:200005; rev:1;)
+
+# --- Nessus SYN Scan Detection ---
+alert tcp any any -> any any (msg:"Possible Nessus SYN scan"; flags:S; detection_filter:track by_src, count 20, seconds 10; sid:200006; rev:1;)
