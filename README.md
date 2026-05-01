@@ -10,15 +10,15 @@ and SSL. Wrote custom Snort IDS rules mapped directly to CVE findings.
 Simulated 5 attacks from Kali and validated real-time detection.
 
 ## Environment
-- Windows VM — victim (Apache 2.4.29, PHP 7.2.0, MySQL, OpenSSL via XAMPP)
-- Kali VM — attacker (Nessus, nmap, curl, mysql client, hydra)
-- Ubuntu VM — SOC monitor (Snort IDS with custom rules)
+- Windows VM - victim (Apache 2.4.29, PHP 7.2.0, MySQL, OpenSSL via XAMPP)
+- Kali VM - attacker (Nessus, nmap, curl, mysql client, hydra)
+- Ubuntu VM - SOC monitor (Snort IDS with custom rules)
 
 ## CVEs Discovered by Nessus
-- Apache 2.4.29 — CVE-2017-15715
-- PHP 7.2.0 — CVE-2019-11043, CVE-2020-7069
-- MySQL — CVE-2012-2122 (weak authentication)
-- OpenSSL — multiple SSL/TLS weaknesses
+- Apache 2.4.29 - CVE-2017-15715
+- PHP 7.2.0 - CVE-2019-11043, CVE-2020-7069
+- MySQL - CVE-2012-2122 (weak authentication)
+- OpenSSL - multiple SSL/TLS weaknesses
 
 ## Custom Snort Rules Written
 5 rules written based directly on Nessus findings:
