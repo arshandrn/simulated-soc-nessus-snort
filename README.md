@@ -29,7 +29,7 @@ Full rules: [snort-rules/local.rules](snort-rules/local.rules)
 ## Key Results
 - Discovered 48 Apache + 44 PHP + 12 OpenSSL vulnerabilities
 - All 5 attack simulations successfully detected by Snort
-- Demonstrated full workflow: CVE discovery → rule writing → detection
+- Demonstrated full workflow: CVE discovery -> rule writing -> detection
 
 ## Tools Used
 Nessus Essentials, Snort IDS, Kali Linux, curl, mysql client,
