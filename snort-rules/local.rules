@@ -13,5 +13,5 @@ alert tcp any any -> 10.97.207.181 443 (msg:"SSL traffic detected - check for we
 #OpenSSL Issues
 alert tcp any any -> 10.97.207.181 443 (msg:"OpenSSL multiple vulnerabilities possible"; sid:200005; rev:1;)
 
-# --- Nessus SYN Scan Detection ---
+#Nessus SYN Scan Detection
 alert tcp any any -> any any (msg:"Possible Nessus SYN scan"; flags:S; detection_filter:track by_src, count 20, seconds 10; sid:200006; rev:1;)
